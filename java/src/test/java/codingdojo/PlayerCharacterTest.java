@@ -17,7 +17,7 @@ public class PlayerCharacterTest {
         var toVerify = new StringBuilder();
 
         // act
-        toVerify.append("Orc deals 100 damage to Hero \n");
+        toVerify.append("Orc deals 100 damage to Hero\n");
         hero.receiveDamage(enemy, 100);
 
         // assert
