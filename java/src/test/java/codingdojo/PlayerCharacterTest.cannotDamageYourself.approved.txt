@@ -1,0 +1,1 @@
+PlayerCharacter{name='Hero', health=1000, level=1, alive=true, factions=[]}

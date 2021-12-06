@@ -1,0 +1,11 @@
+Characters[0] = PlayerCharacter{name='Hero', health=900, level=1, alive=true}
+Characters[1] = PlayerCharacter{name='Hero with max health', health=1000, level=1, alive=true}
+Characters[2] = PlayerCharacter{name='dead hero', health=0, level=1, alive=false}
+Characters[3] = PlayerCharacter{name='dying hero', health=50, level=1, alive=true}
+Characters[4] = PlayerCharacter{name='very high level hero who gets reduced damage', health=51, level=6, alive=true}
+Orc deals 100 damage to each Hero
+Characters[0] = PlayerCharacter{name='Hero', health=800, level=1, alive=true}
+Characters[1] = PlayerCharacter{name='Hero with max health', health=900, level=1, alive=true}
+Characters[2] = PlayerCharacter{name='dead hero', health=0, level=1, alive=false}
+Characters[3] = PlayerCharacter{name='dying hero', health=0, level=1, alive=false}
+Characters[4] = PlayerCharacter{name='very high level hero who gets reduced damage', health=1, level=6, alive=true}
