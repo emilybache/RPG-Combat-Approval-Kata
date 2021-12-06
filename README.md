@@ -31,19 +31,11 @@ various scenarios as you build up the functionality.
 
 1. A Character cannot Deal Damage to itself.
 
-1. A Character can not heal themselves to a health above 1000.
+1. A Character cannot have a health above 1000.
 
 1. When dealing damage:
     - If the target is 5 or more Levels above the attacker, Damage is reduced by 50%
     - If the target is 5 or more Levels below the attacker, Damage is increased by 50%
-
-
-## Retrospective
-
-- Are you keeping up with the requirements? Has any iteration been a big challenge?
-- Do you feel good about your design? Is it scalable and easily adapted to new requirements?
-- Is everything tested? Are you confident in your code?
-- How readable are the test cases? Can you understand what each one is testing?
 
 ## Iteration Three
 
@@ -58,20 +50,45 @@ various scenarios as you build up the functionality.
 
 1. Allies can Heal one another and non-allies cannot.
 
+## Retrospective
+
+- Are you keeping up with the requirements? Has any iteration been a big challenge?
+- Do you feel good about your design? Is it scalable and easily adapted to new requirements?
+- Is everything tested? Are you confident in your code?
+- How readable are the test cases? Can you understand what each one is testing?
+
+
 ## Iteration Four
 
-1. Characters that survive 1000 damage points (counted over several battles) gain a level
+1. Level 1 Characters that survive 1000 damage points (counted over several battles) gain a level
+   - a character cannot gain a level while receiving damage, it happens directly afterwards (if the player is still alive)
+   - Level 2 Characters need to survive 2000 damage points to gain a level, Level 3 Characters need to survive 3000, and so on.
+   - Every time you level up, the count of survived damage points resets to zero
 
-1. Characters that have ever been part of 3 or more distinct factions gain a level
+1. Level 1 Characters that have ever been part of 3 distinct factions gain a level
+   - Level 2 Characters need to join an additional 3 distinct factions to gain a level, Level 3 Characters need to join an additional 3, and so on.
+
+2. The maximum Level for Characters is 10
 
 ## Iteration Five
 
-1. Characters can damage non-character *things* (props).
-    - Anything that has Health may be a target
-    - These things cannot be Healed and they do not Deal Damage
-    - These things do not belong to Factions; they are neutral
-    - When reduced to 0 Health, things are *Destroyed*
-    - As an example, you may create a Tree with 2000 Health
+1. As well as Characters there are also Magical Objects
+   - Magical Objects have Health
+   - The maximum amount of Health is fixed at the time the object is created
+   - When reduced to 0 Health, Magical Objects are *Destroyed*
+   - Magical Objects cannot be Healed by Characters
+   - Magical Objects do not belong to Factions; they are neutral
+    
+1. Characters can gain health from a Healing Magical Object.
+    - Characters can gain any amount of health from the Object, up to its maximum and theirs
+    - Healing Magical Objects cannot deal Damage
+    
+1. Characters can deal Damage by using a Magical Weapon.
+    - These Magical Objects deal a fixed amount of damage when they are used
+    - The amount of damage is fixed at the time the weapon is created
+    - Every time the weapon is used, the Health is reduced by 1
+    - Magical Weapons cannot give Health to a Character
+
 
 ## Retrospective
 
