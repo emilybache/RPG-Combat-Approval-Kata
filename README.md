@@ -24,29 +24,19 @@ various scenarios as you build up the functionality.
     - Damage is subtracted from Health
     - When damage received exceeds current Health, Health becomes 0 and the character dies
 
-1. A Character can Heal a Character.
-    - Dead characters cannot be healed
-    - Healing cannot raise health above 1000
+1. A Character can Heal themselves.
+    - Dead characters cannot heal
 
 ## Iteration Two
 
 1. A Character cannot Deal Damage to itself.
 
-1. A Character can only Heal itself.
+1. A Character can not heal themselves to a health above 1000.
 
 1. When dealing damage:
     - If the target is 5 or more Levels above the attacker, Damage is reduced by 50%
     - If the target is 5 or more Levels below the attacker, Damage is increased by 50%
 
-## Iteration Three
-
-1. Characters have an attack Max Range.
-
-1. *Melee* fighters have a range of 2 meters.
-
-1. *Ranged* fighters have a range of 20 meters.
-
-1. Characters must be in range to deal damage to a target.
 
 ## Retrospective
 
@@ -55,7 +45,7 @@ various scenarios as you build up the functionality.
 - Is everything tested? Are you confident in your code?
 - How readable are the test cases? Can you understand what each one is testing?
 
-## Iteration Four
+## Iteration Three
 
 1. Characters may belong to one or more Factions.
     - Newly created Characters belong to no Faction.
@@ -66,7 +56,13 @@ various scenarios as you build up the functionality.
 
 1. Allies cannot Deal Damage to one another.
 
-1. Allies can Heal one another.
+1. Allies can Heal one another and non-allies cannot.
+
+## Iteration Four
+
+1. Characters that survive 1000 damage points (counted over several battles) gain a level
+
+1. Characters that have ever been part of 3 or more distinct factions gain a level
 
 ## Iteration Five
 
