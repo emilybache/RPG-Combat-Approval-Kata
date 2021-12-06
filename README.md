@@ -1,9 +1,7 @@
 RPG Combat Kata
 ===============
 
-This is a fun kata that has you building simple combat rules 
-as for a role-playing game (RPG). The domain doesn't include a map or any other character 
-skills apart from their ability to damage and heal one another.
+This kata has you building simple combat rules as for a role-playing game (RPG). The domain doesn't include a map or any other character skills apart from their ability to damage and heal one another.
 
 The problem is broken down into a sequence of iterations to help you to focus on doing one 
 thing at a time. There are also a couple of retrospectives where you are invited to reflect 
@@ -56,46 +54,6 @@ various scenarios as you build up the functionality.
 - Do you feel good about your design? Is it scalable and easily adapted to new requirements?
 - Is everything tested? Are you confident in your code?
 - How readable are the test cases? Can you understand what each one is testing?
-
-
-## Iteration Four
-
-1. Level 1 Characters that survive 1000 damage points (counted over several battles) gain a level
-   - a character cannot gain a level while receiving damage, it happens directly afterwards (if the player is still alive)
-   - Level 2 Characters need to survive 2000 damage points to gain a level, Level 3 Characters need to survive 3000, and so on.
-   - Every time you level up, the count of survived damage points resets to zero
-
-1. Level 1 Characters that have ever been part of 3 distinct factions gain a level
-   - Level 2 Characters need to join an additional 3 distinct factions to gain a level, Level 3 Characters need to join an additional 3, and so on.
-
-2. The maximum Level for Characters is 10
-
-## Iteration Five
-
-1. As well as Characters there are also Magical Objects
-   - Magical Objects have Health
-   - The maximum amount of Health is fixed at the time the object is created
-   - When reduced to 0 Health, Magical Objects are *Destroyed*
-   - Magical Objects cannot be Healed by Characters
-   - Magical Objects do not belong to Factions; they are neutral
-    
-1. Characters can gain health from a Healing Magical Object.
-    - Characters can gain any amount of health from the Object, up to its maximum and theirs
-    - Healing Magical Objects cannot deal Damage
-    
-1. Characters can deal Damage by using a Magical Weapon.
-    - These Magical Objects deal a fixed amount of damage when they are used
-    - The amount of damage is fixed at the time the weapon is created
-    - Every time the weapon is used, the Health is reduced by 1
-    - Magical Weapons cannot give Health to a Character
-
-
-## Retrospective
-
-- What problems did you encounter?
-- What have you learned? Any new technique or pattern?
-- Share your design with others, and get feedback on different approaches.
-- How has test maintenance been going? Have you spent a lot of time updating approved files?
 
 ## Acknowledgements
 
