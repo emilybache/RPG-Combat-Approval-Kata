@@ -1,0 +1,11 @@
+(Hero, 900, 1, 1) => Orc deals 100 damage : name: Hero, health: 800, level: 1, alive: 1
+(Hero, 900, 6, 1) => Orc deals 100 damage : name: Hero, health: 850, level: 6, alive: 1
+(Hero, 1000, 1, 1) => Orc deals 100 damage : name: Hero, health: 900, level: 1, alive: 1
+(Hero, 1000, 6, 1) => Orc deals 100 damage : name: Hero, health: 950, level: 6, alive: 1
+(Hero, 0, 1, 1) => Orc deals 100 damage : name: Hero, health: 0, level: 1, alive: 0
+(Hero, 0, 6, 1) => Orc deals 100 damage : name: Hero, health: 0, level: 6, alive: 0
+(Hero, 50, 1, 1) => Orc deals 100 damage : name: Hero, health: 0, level: 1, alive: 0
+(Hero, 50, 6, 1) => Orc deals 100 damage : name: Hero, health: 0, level: 6, alive: 0
+(Hero, 51, 1, 1) => Orc deals 100 damage : name: Hero, health: 0, level: 1, alive: 0
+(Hero, 51, 6, 1) => Orc deals 100 damage : name: Hero, health: 1, level: 6, alive: 1
+
