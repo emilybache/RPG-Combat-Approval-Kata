@@ -1,0 +1,2 @@
+﻿Orc deals 100 damage to Hero
+[rpg.PlayerCharacter, rpg.PlayerCharacter]
