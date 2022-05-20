@@ -1,0 +1,7 @@
+﻿PlayerCharacter{name='Hero', health=1000, level=1, alive=True}
+PlayerCharacter{name='Orc', health=1000, level=1, alive=True}
+
+Orc deals 100 damage to Hero
+
+PlayerCharacter{name='Hero', health=900, level=1, alive=True}
+PlayerCharacter{name='Orc', health=1000, level=1, alive=True}

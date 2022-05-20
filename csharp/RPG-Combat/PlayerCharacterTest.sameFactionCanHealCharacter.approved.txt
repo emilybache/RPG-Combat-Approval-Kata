@@ -1,0 +1,11 @@
+﻿PlayerCharacter{name='Blue Hero 1 with max health', health=1000, level=1, alive=True}
+PlayerCharacter{name='Blue slightly injured hero', health=900, level=1, alive=True}
+PlayerCharacter{name='Blue dead hero', health=0, level=1, alive=False}
+PlayerCharacter{name='Neutral slightly injured hero', health=900, level=1, alive=True}
+
+All Heroes get healed 100 damage by Blue healer
+
+PlayerCharacter{name='Blue Hero 1 with max health', health=1000, level=1, alive=True}
+PlayerCharacter{name='Blue slightly injured hero', health=1000, level=1, alive=True}
+PlayerCharacter{name='Blue dead hero', health=0, level=1, alive=False}
+PlayerCharacter{name='Neutral slightly injured hero', health=900, level=1, alive=True}

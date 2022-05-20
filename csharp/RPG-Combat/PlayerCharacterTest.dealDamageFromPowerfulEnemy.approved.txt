@@ -1,0 +1,15 @@
+﻿PlayerCharacter{name='Hero', health=900, level=1, alive=True}
+PlayerCharacter{name='Hero with max health', health=1000, level=1, alive=True}
+PlayerCharacter{name='dead hero', health=0, level=1, alive=False}
+PlayerCharacter{name='dying hero', health=50, level=1, alive=True}
+PlayerCharacter{name='hero who is same level as orc', health=101, level=6, alive=True}
+PlayerCharacter{name='hero who is 5 levels above orc', health=51, level=11, alive=True}
+
+Level 6 Orc deals 100 damage to each Hero
+
+PlayerCharacter{name='Hero', health=750, level=1, alive=True}
+PlayerCharacter{name='Hero with max health', health=850, level=1, alive=True}
+PlayerCharacter{name='dead hero', health=0, level=1, alive=False}
+PlayerCharacter{name='dying hero', health=0, level=1, alive=False}
+PlayerCharacter{name='hero who is same level as orc', health=1, level=6, alive=True}
+PlayerCharacter{name='hero who is 5 levels above orc', health=1, level=11, alive=True}
