@@ -1,1 +1,0 @@
-﻿PlayerCharacter{name='Blue Hero 1', health=1000, level=1, alive=True, factions=Blues}

@@ -1,20 +1,19 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ApprovalTests;
-using ApprovalTests.Reporters;
-using ApprovalUtilities.Utilities;
+using System.Threading.Tasks;
+using VerifyXunit;
 using Xunit;
 
 namespace rpg
 {
-    [UseReporter(typeof(QuietReporter))]
+    [UsesVerify]
     public class PlayerCharacterTest
     {
         private StringBuilder toVerify = new StringBuilder();
 
         [Fact]
-        public void dealDamage()
+        public Task dealDamage()
         {
             // arrange
             var hero = new PlayerCharacter("Hero");
@@ -27,7 +26,7 @@ namespace rpg
 
             // assert
             toVerify += printCharacterBasics(new List<PlayerCharacter> { hero, enemy });
-            Approvals.Verify(toVerify);
+            return Verifier.Verify(toVerify);
         }
 
         private string printCharacterBasics(List<PlayerCharacter> heroes)
@@ -43,7 +42,7 @@ namespace rpg
 
 
         [Fact]
-        void dealDamageFromPowerfulEnemy()
+        Task dealDamageFromPowerfulEnemy()
         {
             // arrange
             List<PlayerCharacter> heroes = new List<PlayerCharacter>()
@@ -64,20 +63,20 @@ namespace rpg
 
             // assert
             toVerify.Append(printCharacterBasics(heroes));
-            Approvals.Verify(toVerify);
+            return Verifier.Verify(toVerify);
         }
 
         [Fact]
-        void cannotDamageYourself()
+        Task cannotDamageYourself()
         {
             var hero = new PlayerCharacter("Hero");
             hero.receiveDamage(hero, 100);
             toVerify.Append(hero.PrintSimply());
-            Approvals.Verify(toVerify);
+            return Verifier.Verify(toVerify);
         }
 
         [Fact]
-        void healing()
+        Task healing()
         {
             List<PlayerCharacter> heroes = new List<PlayerCharacter>()
             {
@@ -93,12 +92,12 @@ namespace rpg
 
             // assert
             toVerify.Append(printCharacterBasics(heroes));
-            Approvals.Verify(toVerify);
+            return Verifier.Verify(toVerify);
         }
 
 
         [Fact]
-        void joinFactions()
+        Task joinFactions()
         {
             var hero = new PlayerCharacter("Hero");
             hero.joinFaction(new Faction("Blues"));
@@ -109,11 +108,11 @@ namespace rpg
             hero.joinFaction(new Faction("Yellows"));
             hero.leaveFaction(new Faction("Yellows"));
             toVerify.Append(hero.PrintDetails());
-            Approvals.Verify(toVerify);
+            return Verifier.Verify(toVerify);
         }
 
         [Fact]
-        void receiveNoDamageFromSameFaction()
+        Task receiveNoDamageFromSameFaction()
         {
             var hero1 = new PlayerCharacter("Blue Hero 1");
             hero1.joinFaction(new Faction("Blues"));
@@ -121,11 +120,11 @@ namespace rpg
             hero2.joinFaction(new Faction("Blues"));
             hero1.receiveDamage(hero2, 100);
             toVerify.Append(hero1.PrintDetails());
-            Approvals.Verify(toVerify);
+            return Verifier.Verify(toVerify);
         }
 
         [Fact]
-        void sameFactionCanHealCharacter()
+        Task sameFactionCanHealCharacter()
         {
             var healer = new PlayerCharacter("Blue Healer");
             healer.joinFaction(new Faction("Blues"));
@@ -146,7 +145,7 @@ namespace rpg
 
             // assert
             toVerify.Append(printCharacterBasics(heroes));
-            Approvals.Verify(toVerify);
+            return Verifier.Verify(toVerify);
         }
     }
 }

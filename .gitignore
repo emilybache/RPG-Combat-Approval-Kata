@@ -1,1 +1,9 @@
+target
+**/*.iml
 .idea
+.cache
+out/
+build/
+.gradle/
+.DS_Store
+**/*.received.*
