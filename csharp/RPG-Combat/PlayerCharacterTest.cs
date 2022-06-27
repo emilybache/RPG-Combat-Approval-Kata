@@ -1,30 +1,29 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using ApprovalTests;
-using ApprovalTests.Reporters;
-using ApprovalUtilities.Utilities;
+using System.Threading.Tasks;
+using VerifyXunit;
 using Xunit;
 
 namespace rpg
 {
-    [UseReporter(typeof(QuietReporter))]
+    [UsesVerify]
     public class PlayerCharacterTest
     {
         [Fact]
-        public void dealDamage()
+        public Task dealDamage()
         {
             // arrange
             var hero = new PlayerCharacter("Hero");
             var enemy = new PlayerCharacter("Orc");
-            var toVerify = "";
+            var toVerify = hero.ToString() + "\n";
 
             // act
             toVerify += "Orc deals 100 damage to Hero\n";
             hero.receiveDamage(enemy, 100);
 
             // assert
-            toVerify += StringUtils.ToReadableString(new List<PlayerCharacter>{hero, enemy});
-            Approvals.Verify(toVerify);
+            toVerify += hero.ToString();
+            return Verifier.Verify(toVerify);
         }
     }
 }
