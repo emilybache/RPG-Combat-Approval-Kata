@@ -1,0 +1,8 @@
+
+Characters:
+    Character(name='Hero', health=1000, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Hero on defender Hero
+
+Characters:
+    Character(name='Hero', health=1000, level=1, alive=True)

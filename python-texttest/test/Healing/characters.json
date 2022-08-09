@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Hero",
+    "health": 900,
+    "isAlive": true
+  },
+  {
+    "name": "Hero with max health",
+    "health": 1000,
+    "isAlive": true
+  },
+  {
+    "name": "dead hero",
+    "health": 0,
+    "isAlive": false
+  }
+]

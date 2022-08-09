@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Hero",
+    "health": 1000,
+    "isAlive": true
+  }
+]

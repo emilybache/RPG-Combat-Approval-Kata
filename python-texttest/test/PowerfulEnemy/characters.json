@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Hero",
+    "health": 900,
+    "isAlive": true,
+    "level": 1
+  },
+  {
+    "name": "Hero with max health",
+    "health": 1000,
+    "isAlive": true,
+    "level": 1
+  },
+  {
+    "name": "dead hero",
+    "health": 0,
+    "isAlive": false,
+    "level": 1
+  },
+  {
+    "name": "dying hero",
+    "health": 50,
+    "isAlive": true,
+    "level": 1
+  },
+  {
+    "name": "Hero same level as Orc",
+    "health": 101,
+    "isAlive": true,
+    "level": 6
+  },
+  {
+    "name": "Hero 5 levels above Orc",
+    "health": 51,
+    "isAlive": true,
+    "level": 11
+  },
+  {
+    "name": "Orc",
+    "health": 1000,
+    "isAlive": true,
+    "level": 6
+  }
+]

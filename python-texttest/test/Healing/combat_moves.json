@@ -1,0 +1,11 @@
+[
+  {
+    "patients": [
+      "Hero",
+      "Hero with max health",
+      "dead hero"
+    ],
+    "moveType": "HealingMultipleCharacters",
+    "amount": 100
+  }
+]

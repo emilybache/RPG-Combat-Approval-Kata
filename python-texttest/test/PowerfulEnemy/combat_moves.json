@@ -1,0 +1,15 @@
+[
+  {
+    "attacker": "Orc",
+    "defenders": [
+      "Hero",
+      "Hero with max health",
+      "dead hero",
+      "dying hero",
+      "Hero same level as Orc",
+      "Hero 5 levels above Orc"
+    ],
+    "moveType": "DealDamageOnMultipleCharacters",
+    "amount": 100
+  }
+]

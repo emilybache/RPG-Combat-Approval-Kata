@@ -1,0 +1,12 @@
+
+Characters:
+    Character(name='Hero', health=900, level=1, alive=True)
+    Character(name='Hero with max health', health=1000, level=1, alive=True)
+    Character(name='dead hero', health=0, level=1, alive=False)
+
+playing move HealingMultipleCharacters: 100 healing to ['Hero', 'Hero with max health', 'dead hero']
+
+Characters:
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Hero with max health', health=1000, level=1, alive=True)
+    Character(name='dead hero', health=0, level=1, alive=False)
