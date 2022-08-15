@@ -32,8 +32,11 @@ class Character:
             self.health = 0
             self.isAlive = False
 
-    def heal(self, damagePoints):
+    def heal(self, healer, damagePoints):
         if not self.isAlive:
+            return
+
+        if self.factions and not self.same_faction(healer):
             return
 
         self.health += damagePoints
@@ -86,14 +89,16 @@ class DealDamageOnMultipleCharacters(Move):
 
 
 class HealingMultipleCharacters(Move):
-    def __init__(self, character_names, amount):
+    def __init__(self, healer, character_names, amount):
+        self.healer = healer
         self.amount = amount
         self.character_names = character_names
 
     def play(self, characters: dict[str, Character]):
+        healer = characters[self.healer]
         patients = [characters[name] for name in self.character_names]
         for p in patients:
-            p.heal(self.amount)
+            p.heal(healer, self.amount)
 
     def __str__(self):
         return f"HealingMultipleCharacters: {self.amount} healing to {self.character_names}"

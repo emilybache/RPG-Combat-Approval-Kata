@@ -13,5 +13,8 @@
     "name": "dead hero",
     "health": 0,
     "isAlive": false
+  },
+    {
+    "name": "Healer"
   }
 ]

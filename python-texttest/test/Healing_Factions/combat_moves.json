@@ -1,12 +1,14 @@
 [
   {
     "patients": [
-      "Hero",
-      "Hero with max health",
-      "dead hero"
+      "Blue Hero",
+      "Red Hero"
     ],
-    "healer": "Healer",
+    "healer":
+      "Blue Healer",
+    
     "moveType": "HealingMultipleCharacters",
     "amount": 100
   }
+
 ]

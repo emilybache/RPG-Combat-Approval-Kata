@@ -1,0 +1,12 @@
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=800, level=1, alive=True)
+    Character(name='Red Hero', health=800, level=1, alive=True)
+
+playing move HealingMultipleCharacters: 100 healing to ['Blue Hero', 'Red Hero']
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=900, level=1, alive=True)
+    Character(name='Red Hero', health=800, level=1, alive=True)

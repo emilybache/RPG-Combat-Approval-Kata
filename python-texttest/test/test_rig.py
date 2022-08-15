@@ -19,7 +19,7 @@ def init_moves(moves_as_json):
         elif moveType == "DealDamageOnMultipleCharacters":
             moves.append(rpg_combat.DealDamageOnMultipleCharacters(move["attacker"], move["defenders"], move["amount"]))
         elif moveType == "HealingMultipleCharacters":
-            moves.append(rpg_combat.HealingMultipleCharacters(move["patients"], move["amount"]))
+            moves.append(rpg_combat.HealingMultipleCharacters(move["healer"], move["patients"], move["amount"]))
     return moves
 
 
