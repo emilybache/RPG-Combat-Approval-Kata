@@ -1,53 +1,5 @@
 #!/usr/bin/env python
 
-import json
-
-
-class DealDamage:
-    def __init__(self, attacker_name, defender_name, amount):
-        self.attacker_name = attacker_name
-        self.defender_name = defender_name
-        self.damagePoints = amount
-
-    def play(self, characters):
-        attacker = characters[self.attacker_name]
-        defender = characters[self.defender_name]
-        defender.receive_damage(attacker, self.damagePoints)
-
-    def __str__(self):
-        return f"DealDamage: {self.damagePoints} damage points from attacker {self.attacker_name} on defender {self.defender_name}"
-
-
-class DealDamageOnMultipleCharacters:
-    def __init__(self, attacker_name, defender_names, amount):
-        self.attacker_name = attacker_name
-        self.defender_names = defender_names
-        self.damagePoints = amount
-
-    def play(self, characters):
-        attacker = characters[self.attacker_name]
-        defenders = [characters[name] for name in self.defender_names]
-        for defender in defenders:
-            defender.receive_damage(attacker, self.damagePoints)
-
-    def __str__(self):
-        return f"DealDamageOnMultipleCharacters: {self.damagePoints} damage points from attacker {self.attacker_name} on defenders {self.defender_names}"
-
-
-class HealingMultipleCharacters:
-    def __init__(self, character_names, amount):
-        self.amount = amount
-        self.character_names = character_names
-
-    def play(self, characters):
-        patients = [characters[name] for name in self.character_names]
-        for p in patients:
-            p.heal(self.amount)
-
-    def __str__(self):
-        return f"HealingMultipleCharacters: {self.amount} healing to {self.character_names}"
-
-
 class Character:
     def __init__(self, name, health=1000, isAlive=True, level=1, factions=None):
         self.name = name
@@ -56,7 +8,14 @@ class Character:
         self.level = level
         self.factions = factions or []
 
-    def receive_damage(self, attacker, damagePoints):
+    def __str__(self):
+        return f"Character(name='{self.name}'" \
+               f", health={self.health}" \
+               f", level={self.level}" \
+               f", alive={self.isAlive}" \
+               ")"
+
+    def receive_damage(self, attacker: 'Character', damagePoints: int):
         if self == attacker or self.same_faction(attacker):
             return
 
@@ -88,5 +47,57 @@ class Character:
         return False
 
 
-def play(characters, move):
+class Move:
+    """abstract interface to use a superclass"""
+
+    def play(self, characters: dict[str, Character]):
+        pass
+
+
+class DealDamage(Move):
+    def __init__(self, attacker_name, defender_name, amount):
+        self.attacker_name = attacker_name
+        self.defender_name = defender_name
+        self.damagePoints = amount
+
+    def play(self, characters: dict[str, Character]):
+        attacker = characters[self.attacker_name]
+        defender = characters[self.defender_name]
+        defender.receive_damage(attacker, self.damagePoints)
+
+    def __str__(self):
+        return f"DealDamage: {self.damagePoints} damage points from attacker {self.attacker_name} on defender {self.defender_name}"
+
+
+class DealDamageOnMultipleCharacters(Move):
+    def __init__(self, attacker_name, defender_names, amount):
+        self.attacker_name = attacker_name
+        self.defender_names = defender_names
+        self.damagePoints = amount
+
+    def play(self, characters: dict[str, Character]):
+        attacker = characters[self.attacker_name]
+        defenders = [characters[name] for name in self.defender_names]
+        for defender in defenders:
+            defender.receive_damage(attacker, self.damagePoints)
+
+    def __str__(self):
+        return f"DealDamageOnMultipleCharacters: {self.damagePoints} damage points from attacker {self.attacker_name} on defenders {self.defender_names}"
+
+
+class HealingMultipleCharacters(Move):
+    def __init__(self, character_names, amount):
+        self.amount = amount
+        self.character_names = character_names
+
+    def play(self, characters: dict[str, Character]):
+        patients = [characters[name] for name in self.character_names]
+        for p in patients:
+            p.heal(self.amount)
+
+    def __str__(self):
+        return f"HealingMultipleCharacters: {self.amount} healing to {self.character_names}"
+
+
+def play(characters: dict[str, Character], move: Move):
     move.play(characters)
