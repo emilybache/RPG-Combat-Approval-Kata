@@ -1,0 +1,10 @@
+
+Characters:
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+
+playing move Healing: 100 healing from Healer to dead Hero
+
+Characters:
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)

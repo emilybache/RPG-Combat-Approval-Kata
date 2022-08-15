@@ -1,0 +1,358 @@
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=51, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=101, level=6, alive=True)
+    Character(name='Hero with some damage', health=900, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=50, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Orc on defender Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=900, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=51, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=101, level=6, alive=True)
+    Character(name='Hero with some damage', health=900, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=50, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Orc on defender Hero with some damage
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=900, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=51, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=101, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=50, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Orc on defender Orc
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=900, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=51, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=101, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=50, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Olog-hai on defender Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=750, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=51, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=101, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=50, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Olog-hai on defender Hero same level as Olog-hai
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=750, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=51, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=50, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Olog-hai on defender Hero 5 levels above Olog-hai
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=750, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=50, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Olog-hai on defender dead Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=750, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=50, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Olog-hai on defender dying Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=750, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move DealDamage: 100 damage points from attacker Blue Orc on defender Blue Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=750, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move DealDamage: 100 damage points from attacker Blue Orc on defender Red Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=750, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move DealDamage: 700 damage points from attacker Hero 5 levels above Olog-hai on defender Olog-hai
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=750, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=0, level=6, alive=False)
+    Character(name='Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move DealDamage: 700 damage points from attacker Hero 5 levels above Olog-hai on defender Orc
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=750, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=0, level=6, alive=False)
+    Character(name='Orc', health=0, level=1, alive=False)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move Healing: 700 healing from Healer to Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=0, level=6, alive=False)
+    Character(name='Orc', health=0, level=1, alive=False)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move Healing: 100 healing from Healer to dead Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=0, level=6, alive=False)
+    Character(name='Orc', health=0, level=1, alive=False)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move Healing: 100 healing from Healer to Non-violent Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=700, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=0, level=6, alive=False)
+    Character(name='Orc', health=0, level=1, alive=False)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move Healing: 100 healing from Blue Healer to Blue Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=800, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=0, level=6, alive=False)
+    Character(name='Orc', health=0, level=1, alive=False)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move Healing: 100 healing from Healer to Blue Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=800, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=0, level=6, alive=False)
+    Character(name='Orc', health=0, level=1, alive=False)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move Healing: 100 healing from Blue Healer to Red Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=800, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=0, level=6, alive=False)
+    Character(name='Orc', health=0, level=1, alive=False)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)
+
+playing move Healing: 100 healing from Healer to Red Hero
+
+Characters:
+    Character(name='Blue Healer', health=1000, level=1, alive=True)
+    Character(name='Blue Hero', health=800, level=1, alive=True)
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Hero 5 levels above Olog-hai', health=1, level=11, alive=True)
+    Character(name='Hero same level as Olog-hai', health=1, level=6, alive=True)
+    Character(name='Hero with some damage', health=800, level=1, alive=True)
+    Character(name='Non-violent Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=0, level=6, alive=False)
+    Character(name='Orc', health=0, level=1, alive=False)
+    Character(name='Red Hero', health=600, level=1, alive=True)
+    Character(name='dead Hero', health=0, level=1, alive=False)
+    Character(name='dying Hero', health=0, level=1, alive=False)

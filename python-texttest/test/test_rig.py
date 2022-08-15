@@ -4,12 +4,12 @@ import rpg_combat
 import json
 
 
-def init_characters(characters_as_json):
+def init_characters(characters_as_json) -> dict[str, rpg_combat.Character]:
     characters = json.loads(characters_as_json, object_hook=lambda c: rpg_combat.Character(**c))
     return dict((character.name, character) for character in characters)
 
 
-def init_moves(moves_as_json):
+def init_moves(moves_as_json) -> list[rpg_combat.Move]:
     moves = []
     raw_moves = json.loads(moves_as_json)
     for move in raw_moves:
@@ -20,6 +20,8 @@ def init_moves(moves_as_json):
             moves.append(rpg_combat.DealDamageOnMultipleCharacters(move["attacker"], move["defenders"], move["amount"]))
         elif moveType == "HealingMultipleCharacters":
             moves.append(rpg_combat.HealingMultipleCharacters(move["healer"], move["patients"], move["amount"]))
+        elif moveType == "Healing":
+            moves.append(rpg_combat.Healing(move["character1"], move["character2"], move["amount"]))
     return moves
 
 
@@ -36,14 +38,13 @@ def main():
 
     moves = init_moves(combat_moves_as_json)
 
-    # Act
-    print("")
     for move in moves:
+        # Act
+        print("")
         print(f"playing move {move}")
         rpg_combat.play(characters, move)
-
-    # Assert
-    print_characters(characters)
+        # Assert
+        print_characters(characters)
 
 
 def print_characters(characters):

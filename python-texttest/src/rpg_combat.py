@@ -15,6 +15,21 @@ class Character:
                f", alive={self.isAlive}" \
                ")"
 
+    def toDict(self):
+        d = {"name": self.name,
+             "health": self.health,
+             "level": self.level,
+             "alive": self.isAlive, "factions": self.factions}
+        if self.health == 1000:
+            del d["health"]
+        if self.level == 1:
+            del d["level"]
+        if self.isAlive:
+            del d["alive"]
+        if not self.factions:
+            del d["factions"]
+        return d
+
     def receive_damage(self, attacker: 'Character', damagePoints: int):
         if self == attacker or self.same_faction(attacker):
             return
@@ -70,6 +85,21 @@ class DealDamage(Move):
 
     def __str__(self):
         return f"DealDamage: {self.damagePoints} damage points from attacker {self.attacker_name} on defender {self.defender_name}"
+
+
+class Healing(Move):
+    def __init__(self, healer, patient, amount):
+        self.healer = healer
+        self.amount = amount
+        self.patient = patient
+
+    def play(self, characters: dict[str, Character]):
+        healer = characters[self.healer]
+        patient = characters[self.patient]
+        patient.heal(healer, self.amount)
+
+    def __str__(self):
+        return f"Healing: {self.amount} healing from {self.healer} to {self.patient}"
 
 
 class DealDamageOnMultipleCharacters(Move):

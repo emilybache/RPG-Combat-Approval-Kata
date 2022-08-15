@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Hero"
+  },
+  {
+    "name": "Non-violent Hero"
+  },
+  {
+    "name": "Orc"
+  },
+  {
+    "name": "Hero with some damage",
+    "health": 900
+  },
+  {
+    "name": "dead Hero",
+    "health": 0,
+    "isAlive": false
+  },
+  {
+    "name": "dying Hero",
+    "health": 50
+  },
+  {
+    "name": "Hero same level as Olog-hai",
+    "health": 101,
+    "isAlive": true,
+    "level": 6
+  },
+  {
+    "name": "Hero 5 levels above Olog-hai",
+    "health": 51,
+    "isAlive": true,
+    "level": 11
+  },
+  {
+    "name": "Olog-hai",
+    "health": 1000,
+    "isAlive": true,
+    "level": 6
+  },
+  {
+    "name": "Blue Orc",
+    "factions": [
+      "Blue"
+    ]
+  },
+  {
+    "name": "Blue Hero",
+    "health": 700,
+    "factions": [
+      "Blue"
+    ]
+  },
+  {
+    "name": "Red Hero",
+    "health": 700,
+    "factions": [
+      "Red"
+    ]
+  },
+  {
+    "name": "Healer"
+  },
+  {
+    "name": "Blue Healer",
+    "factions": [
+      "Blue"
+    ]
+  }
+]

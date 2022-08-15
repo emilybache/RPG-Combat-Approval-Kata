@@ -1,0 +1,10 @@
+
+Characters:
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Olog-hai on defender Hero
+
+Characters:
+    Character(name='Hero', health=850, level=1, alive=True)
+    Character(name='Olog-hai', health=1000, level=6, alive=True)

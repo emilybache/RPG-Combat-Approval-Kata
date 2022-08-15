@@ -1,0 +1,10 @@
+
+Characters:
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+
+playing move DealDamage: 100 damage points from attacker Blue Orc on defender Red Hero
+
+Characters:
+    Character(name='Blue Orc', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=600, level=1, alive=True)

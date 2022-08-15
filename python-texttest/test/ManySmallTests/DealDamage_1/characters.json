@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Orc"
+  },
+  {
+    "health": 900,
+    "name": "Hero with some damage"
+  }
+]

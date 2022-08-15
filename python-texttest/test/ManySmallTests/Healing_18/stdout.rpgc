@@ -1,0 +1,10 @@
+
+Characters:
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)
+
+playing move Healing: 100 healing from Healer to Red Hero
+
+Characters:
+    Character(name='Healer', health=1000, level=1, alive=True)
+    Character(name='Red Hero', health=700, level=1, alive=True)

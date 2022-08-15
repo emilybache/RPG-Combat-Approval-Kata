@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Healer"
+  },
+  {
+    "isAlive": false,
+    "health": 0,
+    "name": "dead Hero"
+  }
+]

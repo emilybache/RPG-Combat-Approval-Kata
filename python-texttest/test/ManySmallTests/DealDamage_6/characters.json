@@ -1,0 +1,11 @@
+[
+  {
+    "level": 6,
+    "name": "Olog-hai"
+  },
+  {
+    "isAlive": false,
+    "health": 0,
+    "name": "dead Hero"
+  }
+]

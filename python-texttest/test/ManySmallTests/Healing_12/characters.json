@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Healer"
+  },
+  {
+    "name": "Hero",
+    "health": 900
+  }
+]

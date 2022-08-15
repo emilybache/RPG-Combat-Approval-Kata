@@ -1,6 +1,8 @@
-BasicDamage
-PowerfulEnemy
-CannotDamageYourself
-Healing
-Factions
-Healing_Factions
+# Tests named after the feature they are designed to test
+Features
+
+# One big test case for all the features
+OneBigTest
+
+# Fine grained small tests for every little feature
+ManySmallTests

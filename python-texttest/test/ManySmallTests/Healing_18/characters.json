@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Healer"
+  },
+  {
+    "factions": [
+      "Red"
+    ],
+    "health": 700,
+    "name": "Red Hero"
+  }
+]

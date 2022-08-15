@@ -1,0 +1,8 @@
+[
+  {
+    "character1": "Orc",
+    "character2": "Hero with some damage",
+    "moveType": "DealDamage",
+    "amount": 100
+  }
+]

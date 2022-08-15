@@ -1,0 +1,10 @@
+
+Characters:
+    Character(name='Hero 5 levels above Olog-hai', health=51, level=11, alive=True)
+    Character(name='Orc', health=1000, level=1, alive=True)
+
+playing move DealDamage: 700 damage points from attacker Hero 5 levels above Olog-hai on defender Orc
+
+Characters:
+    Character(name='Hero 5 levels above Olog-hai', health=51, level=11, alive=True)
+    Character(name='Orc', health=0, level=1, alive=False)
