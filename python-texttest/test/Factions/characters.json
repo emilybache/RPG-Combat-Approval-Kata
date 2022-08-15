@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Blue Orc",
+    "factions": [
+      "Blue"
+    ]
+  },
+  {
+    "name": "Blue Hero",
+    "factions": [
+      "Blue"
+    ]
+  },
+  {
+    "name": "Red Hero",
+    "factions": [
+      "Red"
+    ]
+  }
+]

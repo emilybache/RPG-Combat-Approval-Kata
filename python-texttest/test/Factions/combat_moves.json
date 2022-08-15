@@ -1,0 +1,11 @@
+[
+  {
+    "attacker": "Blue Orc",
+    "defenders": [
+      "Blue Hero",
+      "Red Hero"
+    ],
+    "moveType": "DealDamageOnMultipleCharacters",
+    "amount": 100
+  }
+]
