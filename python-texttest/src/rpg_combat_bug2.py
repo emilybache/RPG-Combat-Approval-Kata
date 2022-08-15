@@ -48,8 +48,6 @@ class Character:
             self.isAlive = False
 
     def heal(self, healer, damagePoints):
-        if not self.isAlive:
-            return
 
         if self.factions and not self.same_faction(healer):
             return

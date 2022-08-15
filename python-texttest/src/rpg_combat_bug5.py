@@ -55,8 +55,7 @@ class Character:
             return
 
         self.health += damagePoints
-        if self.health > 1000:
-            self.health = 1000
+
 
     def same_faction(self, character):
         for faction in self.factions:

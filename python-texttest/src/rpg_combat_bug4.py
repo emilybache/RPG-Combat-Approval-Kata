@@ -62,7 +62,7 @@ class Character:
         for faction in self.factions:
             if faction in character.factions:
                 return True
-        return False
+        return True
 
 
 class Move:

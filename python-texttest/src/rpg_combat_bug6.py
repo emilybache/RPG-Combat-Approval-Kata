@@ -38,7 +38,7 @@ class Character:
             self.health -= int(damagePoints / 2.0)
 
         elif self.level <= (attacker.level - 5):
-            self.health -= int(damagePoints * 1.5)
+            self.health -= int(damagePoints * 2.0)
 
         else:
             self.health -= damagePoints

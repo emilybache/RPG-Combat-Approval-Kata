@@ -31,7 +31,7 @@ class Character:
         return d
 
     def receive_damage(self, attacker: 'Character', damagePoints: int):
-        if self == attacker or self.same_faction(attacker):
+        if self == attacker:
             return
 
         if self.level >= (attacker.level + 5):

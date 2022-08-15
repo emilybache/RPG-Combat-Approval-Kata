@@ -94,8 +94,8 @@ class Healing(Move):
         self.patient = patient
 
     def play(self, characters: dict[str, Character]):
-        healer = characters[self.healer]
-        patient = characters[self.patient]
+        healer = characters[self.patient]
+        patient = characters[self.healer]
         patient.heal(healer, self.amount)
 
     def __str__(self):
