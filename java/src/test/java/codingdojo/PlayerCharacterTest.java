@@ -15,13 +15,14 @@ public class PlayerCharacterTest {
         var hero = new PlayerCharacter("Hero");
         var enemy = new PlayerCharacter("Orc");
         var toVerify = new StringBuilder();
+        toVerify.append(hero.toString() + "\n");
 
         // act
         toVerify.append("Orc deals 100 damage to Hero\n");
         hero.receiveDamage(enemy, 100);
 
         // assert
-        toVerify.append(StringUtils.toString("Characters", List.of(hero, enemy)));
+        toVerify.append(hero.toString() + "\n");
         Approvals.verify(toVerify);
     }
 
