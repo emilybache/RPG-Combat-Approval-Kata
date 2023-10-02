@@ -16,8 +16,8 @@ namespace rpg
         public Task dealDamage()
         {
             // arrange
-            var hero = PlayerCharacter.CreatePlayerCharacter("Hero");
-            var enemy = PlayerCharacter.CreatePlayerCharacter("Orc");
+            var hero = new PlayerCharacter("Hero");
+            var enemy = new PlayerCharacter("Orc");
             var toVerify = printCharacterBasics(new List<PlayerCharacter> { hero, enemy });;
 
             // act
@@ -47,14 +47,14 @@ namespace rpg
             // arrange
             List<PlayerCharacter> heroes = new List<PlayerCharacter>()
             {
-                PlayerCharacter.CreatePlayerCharacter("Hero", 900, 1, true),
-                PlayerCharacter.CreatePlayerCharacter("Hero with max health", 1000, 1, true),
-                PlayerCharacter.CreatePlayerCharacter("dead hero", 0, 1, false),
-                PlayerCharacter.CreatePlayerCharacter("dying hero", 50, 1, true),
-                PlayerCharacter.CreatePlayerCharacter("hero who is same level as orc", 101, 6, true),
-                PlayerCharacter.CreatePlayerCharacter("hero who is 5 levels above orc", 51, 11, true)
+                new PlayerCharacter("Hero", 900, 1, true),
+                new PlayerCharacter("Hero with max health", 1000, 1, true),
+                new PlayerCharacter("dead hero", 0, 1, false),
+                new PlayerCharacter("dying hero", 50, 1, true),
+                new PlayerCharacter("hero who is same level as orc", 101, 6, true),
+                new PlayerCharacter("hero who is 5 levels above orc", 51, 11, true)
             };
-            var enemy = PlayerCharacter.CreatePlayerCharacter("Orc", 1000, 6, true);
+            var enemy = new PlayerCharacter("Orc", 1000, 6, true);
             toVerify.Append(printCharacterBasics(heroes));
 
             // act
@@ -69,7 +69,7 @@ namespace rpg
         [Fact]
         Task cannotDamageYourself()
         {
-            var hero = PlayerCharacter.CreatePlayerCharacter("Hero");
+            var hero = new PlayerCharacter("Hero");
             hero.receiveDamage(hero, 100);
             toVerify.Append(hero.PrintSimply());
             return Verifier.Verify(toVerify);
@@ -80,9 +80,9 @@ namespace rpg
         {
             List<PlayerCharacter> heroes = new List<PlayerCharacter>()
             {
-                PlayerCharacter.CreatePlayerCharacter("Hero", 900, 1, true),
-                PlayerCharacter.CreatePlayerCharacter("Hero with max health", 1000, 1, true),
-                PlayerCharacter.CreatePlayerCharacter("dead hero", 0, 1, false)
+                new PlayerCharacter("Hero", 900, 1, true),
+                new PlayerCharacter("Hero with max health", 1000, 1, true),
+                new PlayerCharacter("dead hero", 0, 1, false)
             };
             toVerify.Append(printCharacterBasics(heroes));
 
@@ -99,7 +99,7 @@ namespace rpg
         [Fact]
         Task joinFactions()
         {
-            var hero = PlayerCharacter.CreatePlayerCharacter("Hero");
+            var hero = new PlayerCharacter("Hero");
             hero.joinFaction(new Faction("Blues"));
             hero.joinFaction(new Faction("Reds"));
             // duplicate addition has no effect
@@ -114,9 +114,9 @@ namespace rpg
         [Fact]
         Task receiveNoDamageFromSameFaction()
         {
-            var hero1 = PlayerCharacter.CreatePlayerCharacter("Blue Hero 1");
+            var hero1 = new PlayerCharacter("Blue Hero 1");
             hero1.joinFaction(new Faction("Blues"));
-            var hero2 = PlayerCharacter.CreatePlayerCharacter("Blue Hero 2");
+            var hero2 = new PlayerCharacter("Blue Hero 2");
             hero2.joinFaction(new Faction("Blues"));
             hero1.receiveDamage(hero2, 100);
             toVerify.Append(hero1.PrintDetails());
@@ -126,17 +126,17 @@ namespace rpg
         [Fact]
         Task sameFactionCanHealCharacter()
         {
-            var healer = PlayerCharacter.CreatePlayerCharacter("Blue Healer");
+            var healer = new PlayerCharacter("Blue Healer");
             healer.joinFaction(new Faction("Blues"));
 
             List<PlayerCharacter> heroes = new List<PlayerCharacter>()
             {
-                PlayerCharacter.CreatePlayerCharacter("Blue Hero 1 with max health"),
-                PlayerCharacter.CreatePlayerCharacter("Blue slightly injured hero", 900, 1, true),
-                PlayerCharacter.CreatePlayerCharacter("Blue dead hero", 0, 1, false)
+                new PlayerCharacter("Blue Hero 1 with max health"),
+                new PlayerCharacter("Blue slightly injured hero", 900, 1, true),
+                new PlayerCharacter("Blue dead hero", 0, 1, false)
             };
             heroes.ForEach(h => h.joinFaction(new Faction("Blues")));
-            heroes.Add(PlayerCharacter.CreatePlayerCharacter("Neutral slightly injured hero", 900, 1, true));
+            heroes.Add(new PlayerCharacter("Neutral slightly injured hero", 900, 1, true));
             toVerify.Append(printCharacterBasics(heroes));
 
             // act

@@ -11,19 +11,9 @@ public class PlayerCharacter
     private bool alive;
     HashSet<Faction> factions = new HashSet<Faction>();
 
-    private PlayerCharacter(string name) : this(name, 1000, 1, true) {
+    public PlayerCharacter(string name) : this(name, 1000, 1, true) {
     }
-
-    public static PlayerCharacter CreatePlayerCharacter(string name)
-    {
-        return new PlayerCharacter(name);
-    }
-
-    public static PlayerCharacter CreatePlayerCharacter(string name, int health, int level, bool isAlive)
-    {
-        return new PlayerCharacter(name, health, level, isAlive);
-    }
-
+    
     public PlayerCharacter(string name, int health, int level, bool alive) {
         this.name = name;
         this.health = health;
@@ -48,7 +38,7 @@ public class PlayerCharacter
             this.alive = false;
         }
     }
-
+    
     private bool sameFaction(PlayerCharacter otherCharacter) {
         foreach (var faction in factions)
         {
