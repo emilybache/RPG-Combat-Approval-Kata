@@ -5,15 +5,15 @@
 using namespace std;
 
 
-TEST(PlayerCharacterTest, dealDamage) {
+TEST(PlayerCharacterTest, HeroDefeatsOrc) {
     auto hero = new PlayerCharacter("Hero");
     auto orc = new PlayerCharacter("Orc");
-    auto toVerify = stringstream();
-    toVerify << *hero;
+    auto battleReport = stringstream();
+    battleReport << *hero;
 
-    toVerify << "Orc deals 100 damage to Hero\n";
+    battleReport << "Orc deals 100 damage to Hero.\n";
     hero->receiveDamage(orc, 100);
 
-    toVerify << *hero;
-    ApprovalTests::Approvals::verify(toVerify.str());
+    battleReport << *hero;
+    ApprovalTests::Approvals::verify(battleReport.str());
 }
