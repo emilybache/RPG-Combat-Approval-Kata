@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PlayerCharacterTest {
+class PlayerCharacterTest {
     @Test
     void dealDamage() {
         // arrange
