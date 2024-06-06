@@ -2,6 +2,7 @@ package codingdojo;
 
 import com.spun.util.StringUtils;
 import org.approvaltests.Approvals;
+import org.approvaltests.StoryBoard;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -13,17 +14,18 @@ class PlayerCharacterTest {
     void dealDamage() {
         // arrange
         var hero = new PlayerCharacter("Hero");
-        var enemy = new PlayerCharacter("Orc");
-        var toVerify = new StringBuilder();
-        toVerify.append(hero.toString() + "\n");
+        var orc = new PlayerCharacter("Orc");
+        var story = new StoryBoard();
+        story.addDescription("Hero battles orc");
+
+        story.addFrame("Given Hero initial status", hero);
 
         // act
-        toVerify.append("Orc deals 100 damage to Hero\n");
-        hero.receiveDamage(enemy, 100);
+        hero.receiveDamage(orc, 100);
+        story.addFrame("When Orc deals 100 damage to Hero", hero);
 
         // assert
-        toVerify.append(hero.toString() + "\n");
-        Approvals.verify(toVerify);
+        Approvals.verify(story);
     }
 
 }
