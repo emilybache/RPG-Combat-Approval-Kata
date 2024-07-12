@@ -1,8 +1,7 @@
 
-#include <string>
-#include <ostream>
 #include "PlayerCharacter.h"
 
+using namespace std;
 
 void PlayerCharacter::receiveDamage(PlayerCharacter *enemy, int damage) {
     // TODO: update health

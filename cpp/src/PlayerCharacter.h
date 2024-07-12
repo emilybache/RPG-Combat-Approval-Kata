@@ -1,23 +1,23 @@
-#include <utility>
+#include <ostream>
+#include <string>
 
-#ifndef RPB_COMBAT_PLAYERCHARACTER_H
-#define RPB_COMBAT_PLAYERCHARACTER_H
+#ifndef RPG_COMBAT_PLAYERCHARACTER_H
+#define RPG_COMBAT_PLAYERCHARACTER_H
 
-using namespace std;
 
 class PlayerCharacter {
 
 public:
-    explicit PlayerCharacter(string  name) : _name(std::move(name)) {};
+    explicit PlayerCharacter(std::string  name) : _name(std::move(name)) {}
 
     void receiveDamage(PlayerCharacter *enemy, int damage);
 
     friend std::ostream& operator<<(std::ostream& os, const PlayerCharacter& player);
 
 private:
-    string _name;
+    std::string _name;
 
 };
 
 
-#endif //RPB_COMBAT_PLAYERCHARACTER_H
+#endif //RPG_COMBAT_PLAYERCHARACTER_H
