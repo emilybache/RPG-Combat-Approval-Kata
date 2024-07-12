@@ -1,8 +1,8 @@
 #include <string>
 #include <utility>
 
-#ifndef RPB_COMBAT_PLAYERCHARACTER_H
-#define RPB_COMBAT_PLAYERCHARACTER_H
+#ifndef RPG_COMBAT_PLAYERCHARACTER_H
+#define RPG_COMBAT_PLAYERCHARACTER_H
 
 
 class PlayerCharacter {
@@ -20,4 +20,4 @@ private:
 };
 
 
-#endif //RPB_COMBAT_PLAYERCHARACTER_H
+#endif //RPG_COMBAT_PLAYERCHARACTER_H
