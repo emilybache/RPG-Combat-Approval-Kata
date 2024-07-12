@@ -1,5 +1,5 @@
+#include <ostream>
 #include <string>
-#include <utility>
 
 #ifndef RPG_COMBAT_PLAYERCHARACTER_H
 #define RPG_COMBAT_PLAYERCHARACTER_H
