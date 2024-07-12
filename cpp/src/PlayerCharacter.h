@@ -8,7 +8,7 @@
 class PlayerCharacter {
 
 public:
-    explicit PlayerCharacter(std::string  name) : _name(std::move(name)) {};
+    explicit PlayerCharacter(std::string  name) : _name(std::move(name)) {}
 
     void receiveDamage(PlayerCharacter *enemy, int damage);
 
