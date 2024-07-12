@@ -2,6 +2,7 @@
 #include "catch2/catch.hpp"
 #include "PlayerCharacter.h"
 
+using namespace std;
 
 TEST_CASE ("PlayerCharacter") {
     auto hero = new PlayerCharacter("Hero");

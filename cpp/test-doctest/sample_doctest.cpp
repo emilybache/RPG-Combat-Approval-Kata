@@ -2,6 +2,7 @@
 #include "doctest/doctest.h"
 #include "PlayerCharacter.h"
 
+using namespace std;
 
 TEST_CASE ("PlayerCharacter") {
     auto hero = new PlayerCharacter("Hero");
