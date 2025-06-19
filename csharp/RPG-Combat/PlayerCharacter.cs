@@ -8,7 +8,7 @@ public class PlayerCharacter
     {
     }
 
-    public void receiveDamage(PlayerCharacter enemy, int damagePoints)
+    public void ReceiveDamage(PlayerCharacter enemy, int damagePoints)
     {
     }
 }

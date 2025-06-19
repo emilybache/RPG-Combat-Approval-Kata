@@ -6,11 +6,10 @@ using Xunit;
 
 namespace rpg
 {
-    [UsesVerify]
-    public class PlayerCharacterTest
+    public class PlayerCharacterXUnitTest
     {
         [Fact]
-        public Task dealDamage()
+        public Task DealDamage()
         {
             // arrange
             var hero = new PlayerCharacter("Hero");
@@ -19,7 +18,7 @@ namespace rpg
 
             // act
             toVerify += "Orc deals 100 damage to Hero\n";
-            hero.receiveDamage(enemy, 100);
+            hero.ReceiveDamage(enemy, 100);
 
             // assert
             toVerify += hero.ToString();
