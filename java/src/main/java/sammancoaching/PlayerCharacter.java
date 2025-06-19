@@ -1,4 +1,4 @@
-package codingdojo;
+package sammancoaching;
 
 public class PlayerCharacter {
     public PlayerCharacter(String name) {
