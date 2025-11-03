@@ -1,0 +1,8 @@
+
+Characters:
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Orc1', health=1000, level=1, alive=True)
+Orc Receives Damage From Hero 100
+Characters:
+    Character(name='Hero', health=1000, level=1, alive=True)
+    Character(name='Orc1', health=900, level=1, alive=True)
