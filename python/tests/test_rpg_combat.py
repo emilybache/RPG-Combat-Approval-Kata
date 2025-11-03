@@ -26,7 +26,7 @@ def test_basic_battle():
     report += print_characters(characters)
 
     damage = 100
-    report += f"Orc Receives Damage From Hero {damage}"
+    report += f"\n{orc.name} Receives {damage} Damage From {hero.name}\n"
     orc.receive_damage(hero, damage)
 
     report += print_characters(characters)
