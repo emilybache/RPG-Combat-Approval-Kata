@@ -4,7 +4,6 @@ import pytest
 from approvaltests import verify
 
 from rpg_combat import Character
-from sample import *
 
 
 def print_characters(characters):
