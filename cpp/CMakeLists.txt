@@ -1,6 +1,7 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.25)
+set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
 set(CMAKE_VERBOSE_MAKEFILE ON)
-project(RPB-Combat VERSION 1.0
+project(RPG-Combat VERSION 1.0
         LANGUAGES CXX)
 
 # uncomment these lines to enable coverage measurements using gcov
