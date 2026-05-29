@@ -8,21 +8,34 @@ namespace rpg
 {
     public class PlayerCharacterXUnitTest
     {
-        [Fact]
-        public Task DealDamage()
+        private string PrintCharacters(IEnumerable<PlayerCharacter> characters)
         {
-            // arrange
-            var hero = new PlayerCharacter("Hero");
-            var enemy = new PlayerCharacter("Orc");
-            var toVerify = hero.ToString() + "\n";
+            var report = new StringBuilder("Characters:\n");
+            foreach (var character in characters)
+            {
+                report.AppendLine($"    {character}");
+            }
+            return report.ToString();
+        }
 
-            // act
-            toVerify += "Orc deals 100 damage to Hero\n";
-            hero.ReceiveDamage(enemy, 100);
+        [Fact]
+        public Task BasicBattle()
+        {
+            var report = new StringBuilder("\n");
 
-            // assert
-            toVerify += hero.ToString();
-            return Verifier.Verify(toVerify);
+            var hero = new PlayerCharacter("Hero", factions: new List<string> { "Elf" });
+            var orc = new PlayerCharacter("Orc1", factions: new List<string> { "White Hand" });
+            var characters = new List<PlayerCharacter> { hero, orc };
+            
+            report.Append(PrintCharacters(characters));
+
+            int damage = 100;
+            report.AppendLine($"\n{orc.Name} Receives {damage} Damage From {hero.Name}");
+            orc.ReceiveDamage(hero, damage);
+
+            report.Append(PrintCharacters(characters));
+
+            return Verifier.Verify(report.ToString());
         }
     }
 }
