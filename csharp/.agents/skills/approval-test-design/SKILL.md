@@ -1,6 +1,6 @@
 ---
 name: approval-test-design
-description: Design unit tests with an Approval testing approach instead of Assertions.
+description: Design unit tests with an Approval testing approach instead of Assert statements.
 ---
 
 * Stack replies with emoji: 📸
