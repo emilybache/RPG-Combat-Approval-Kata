@@ -13,6 +13,7 @@ public class PlayerCharacter
     public bool IsAlive { get; private set; }
     public int Level { get; }
     public List<string> Factions { get; }
+    private int MaxHealth => Level >= 6 && BugId != 7 ? 1500 : 1000;
 
     public PlayerCharacter(string name, int health = 1000, bool isAlive = true, int level = 1, List<string> factions = null)
     {
@@ -39,7 +40,7 @@ public class PlayerCharacter
             { "factions", Factions }
         };
 
-        if (Health == 1000) d.Remove("health");
+        if (Health == MaxHealth) d.Remove("health");
         if (Level == 1) d.Remove("level");
         if (IsAlive) d.Remove("alive");
         if (!Factions.Any()) d.Remove("factions");
@@ -88,9 +89,9 @@ public class PlayerCharacter
         }
 
         Health += damagePoints;
-        if (BugId != 5 && Health > 1000)
+        if (BugId != 5 && Health > MaxHealth)
         {
-            Health = 1000;
+            Health = MaxHealth;
         }
     }
 
